@@ -1,0 +1,21 @@
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.options {
+    flex-basis: 24%;
+    margin: 1rem 2rem;
+    border: 1px dashed dodgerblue;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
+    background-color: beige;
+}
+
+.customOrders {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
