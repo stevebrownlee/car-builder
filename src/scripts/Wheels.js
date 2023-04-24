@@ -1,14 +1,17 @@
-import { getWheels, setWheel } from "./database.js"
+import { setWheel } from "./StateTracker.js"
 
-document.addEventListener("change", clickEvent => {
+const choiceHandler = (clickEvent) => {
     if (clickEvent.target.id === "wheel") {
         setWheel(parseInt(clickEvent.target.value))
     }
-})
+}
 
-const wheels = getWheels()
+export const Wheels = async () => {
+    const request = await fetch("http://localhost:8088/wheels")
+    const wheels = await request.json()
 
-export const Wheels = () => {
+    document.addEventListener("change", choiceHandler)
+
     return `<h2>Wheels</h2>
     <select id="wheel">
         <option value="0">Select an wheel style</option>

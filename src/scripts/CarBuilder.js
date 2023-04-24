@@ -1,4 +1,4 @@
-import { addCustomOrder } from "./database.js"
+import { addCustomOrder } from "./StateTracker.js"
 import { Interiors } from "./Interiors.js"
 import { Orders } from "./Orders.js"
 import { Paints } from "./Paints.js"
@@ -14,22 +14,22 @@ document.addEventListener(
     }
 )
 
-export const CarBuilder = () => {
+export const CarBuilder = async () => {
     return `
         <h1>Cars 'R Us: Personal Car Builder</h1>
 
         <article class="choices">
             <section class="choices__metals options">
-                ${Paints()}
+                ${await Paints()}
             </section>
             <section class="choices__sizes options">
-                ${Interiors()}
+                ${await Interiors()}
             </section>
             <section class="choices__styles options">
-                ${Wheels()}
+                ${await Wheels()}
             </section>
             <section class="choices__styles options">
-                ${Technologies()}
+                ${await Technologies()}
             </section>
         </article>
 
@@ -39,7 +39,7 @@ export const CarBuilder = () => {
 
         <article class="customOrders">
             <h2>Custom Car Orders</h2>
-            ${Orders()}
+            ${await Orders()}
         </article>
     `
 }

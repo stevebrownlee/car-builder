@@ -1,0 +1,195 @@
+{
+  "paints": [
+    {
+      "id": 1,
+      "color": "Silver",
+      "price": 500
+    },
+    {
+      "id": 2,
+      "color": "Midnight Blue",
+      "price": 710
+    },
+    {
+      "id": 3,
+      "color": "Firebrick Red",
+      "price": 965
+    },
+    {
+      "id": 4,
+      "color": "Blizzard White",
+      "price": 625
+    },
+    {
+      "id": 5,
+      "color": "Copper Canyon",
+      "price": 910
+    },
+    {
+      "id": 6,
+      "color": "Spring Green",
+      "price": 965
+    }
+  ],
+  "technologies": [
+    {
+      "id": 1,
+      "package": "Basic Package",
+      "price": 500
+    },
+    {
+      "id": 2,
+      "package": "Navigation Package",
+      "price": 710
+    },
+    {
+      "id": 3,
+      "package": "Visibility Package",
+      "price": 965
+    },
+    {
+      "id": 4,
+      "package": "Ultra Package",
+      "price": 965
+    }
+  ],
+  "interiors": [
+    {
+      "id": 1,
+      "material": "Beige Fabric",
+      "price": 405
+    },
+    {
+      "id": 2,
+      "material": "Charcoal Fabric",
+      "price": 782
+    },
+    {
+      "id": 3,
+      "material": "White Leather",
+      "price": 1470
+    },
+    {
+      "id": 4,
+      "material": "Black Leather",
+      "price": 1997
+    }
+  ],
+  "wheels": [
+    {
+      "id": 1,
+      "style": "17-inch Pair Radial",
+      "price": 12.42
+    },
+    {
+      "id": 2,
+      "style": "17-inch Pair Radial Black",
+      "price": 736.4
+    },
+    {
+      "id": 3,
+      "style": "18-inch Pair Spoke Silver",
+      "price": 1258.9
+    },
+    {
+      "id": 4,
+      "style": "18-inch Pair Spoke Black",
+      "price": 795.45
+    }
+  ],
+  "orderPaints": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "paintId": 3
+    },
+    {
+      "id": 1,
+      "orderId": 1,
+      "paintId": 5
+    },
+    {
+      "paintId": 1,
+      "orderId": 2,
+      "id": 2
+    },
+    {
+      "paintId": 2,
+      "orderId": 2,
+      "id": 3
+    },
+    {
+      "paintId": 5,
+      "orderId": 3,
+      "id": 4
+    },
+    {
+      "paintId": 6,
+      "orderId": 3,
+      "id": 5
+    },
+    {
+      "paintId": 2,
+      "orderId": 4,
+      "id": 6
+    },
+    {
+      "paintId": 4,
+      "orderId": 4,
+      "id": 7
+    },
+    {
+      "paintId": 1,
+      "orderId": 5,
+      "id": 8
+    },
+    {
+      "paintId": 2,
+      "orderId": 5,
+      "id": 9
+    },
+    {
+      "paintId": 3,
+      "orderId": 5,
+      "id": 10
+    },
+    {
+      "paintId": 4,
+      "orderId": 5,
+      "id": 11
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "interiorId": 3,
+      "wheelId": 2,
+      "technologyId": 1,
+      "paintId": 3
+    },
+    {
+      "wheelId": 1,
+      "interiorId": 1,
+      "technologyId": 1,
+      "id": 2
+    },
+    {
+      "wheelId": 4,
+      "interiorId": 4,
+      "technologyId": 4,
+      "id": 3
+    },
+    {
+      "wheelId": 3,
+      "interiorId": 3,
+      "technologyId": 2,
+      "id": 4
+    },
+    {
+      "wheelId": 4,
+      "interiorId": 2,
+      "technologyId": 3,
+      "id": 5
+    }
+  ]
+}

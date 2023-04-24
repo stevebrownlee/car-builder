@@ -1,14 +1,17 @@
-import { getInteriors, setInterior } from "./database.js"
+import { setInterior } from "./StateTracker.js"
 
-document.addEventListener("change", clickEvent => {
+const choiceHandler = (clickEvent) => {
     if (clickEvent.target.id === "interior") {
         setInterior(parseInt(clickEvent.target.value))
     }
-})
+}
 
-const interiors = getInteriors()
+export const Interiors = async () => {
+    const request = await fetch("http://localhost:8088/interiors")
+    const interiors = await request.json()
 
-export const Interiors = () => {
+    document.addEventListener("change", choiceHandler)
+
     return `<h2>Interior</h2>
         <select id="interior">
             <option value="0">Select an interior material</option>
