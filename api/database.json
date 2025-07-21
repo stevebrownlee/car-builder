@@ -157,6 +157,16 @@
       "paintId": 4,
       "orderId": 5,
       "id": 11
+    },
+    {
+      "paintId": 4,
+      "orderId": 6,
+      "id": 12
+    },
+    {
+      "paintId": 2,
+      "orderId": 6,
+      "id": 13
     }
   ],
   "orders": [
@@ -164,8 +174,7 @@
       "id": 1,
       "interiorId": 3,
       "wheelId": 2,
-      "technologyId": 1,
-      "paintId": 3
+      "technologyId": 1
     },
     {
       "wheelId": 1,
@@ -190,6 +199,12 @@
       "interiorId": 2,
       "technologyId": 3,
       "id": 5
+    },
+    {
+      "wheelId": 2,
+      "interiorId": 2,
+      "technologyId": 4,
+      "id": 6
     }
   ]
 }

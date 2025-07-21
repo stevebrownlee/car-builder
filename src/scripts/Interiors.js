@@ -1,4 +1,5 @@
 import { setInterior } from "./StateTracker.js"
+import { renderAsHTML } from "./utils.js"
 
 const choiceHandler = (clickEvent) => {
     if (clickEvent.target.id === "interior") {
@@ -16,11 +17,10 @@ export const Interiors = async () => {
         <select id="interior">
             <option value="0">Select an interior material</option>
             ${
-                interiors.map(
-                    (interior) => {
-                        return `<option value="${interior.id}">${interior.material}</option>`
-                    }
-                ).join("")
+                renderAsHTML(
+                    interiors,
+                    (interior) => `<option value="${interior.id}">${interior.material}</option>`
+                )
             }
         </select>
     `
